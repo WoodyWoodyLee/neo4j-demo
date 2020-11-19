@@ -25,13 +25,4 @@ public interface StarRepository extends Neo4jRepository<Star, Long> {
     @Query("MATCH p =(n:star)-[r:guanxi]->(m:star) WHERE m.name=$name RETURN n")
     List<Star> findFriendByName(String name);
 
-    /**
-     * 根据名字找明星
-     * @author: QING LI
-     * @createDate: 2020/11/19 15:33
-     * @updatedDate:
-     * @param name 名字
-     * @return: com.chinawanpu.neo4jdemo.entity.Star
-     */
-    List<Star> findByName(String name);
 }
