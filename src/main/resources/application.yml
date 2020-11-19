@@ -1,0 +1,4 @@
+spring:
+  data:
+    neo4j:
+      uri: neo4j://192.168.0.249:7687
