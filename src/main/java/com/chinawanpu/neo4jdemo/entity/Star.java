@@ -7,8 +7,6 @@ import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 
-import java.util.Date;
-
 /**
  * @description: 明星类
  * @date: 2020/11/19 14:56
@@ -37,5 +35,4 @@ public class Star {
     private String tagline;
     private String title;
     private String ylqUrl;
-    private Date createTime;
 }
