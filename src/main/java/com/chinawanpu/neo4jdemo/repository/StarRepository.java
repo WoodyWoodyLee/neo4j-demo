@@ -24,5 +24,4 @@ public interface StarRepository extends Neo4jRepository<Star, Long> {
      */
     @Query("MATCH p =(n:star)-[r:guanxi]->(m:star) WHERE m.name=$name RETURN n")
     List<Star> findFriendByName(String name);
-
 }

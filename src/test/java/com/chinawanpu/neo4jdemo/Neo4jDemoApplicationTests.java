@@ -35,4 +35,17 @@ class Neo4jDemoApplicationTests {
         }
     }
 
+    @Test
+    void testOriginalApi(){
+        Iterable<Star> all = starRepository.findAll();
+        for (Star star : all) {
+            System.out.println(star);
+        }
+        System.out.println("============>>>>>>>>>>>");
+        Iterable<Relationship> relationships = shipRepository.findAll();
+        for (Relationship r : relationships) {
+            System.out.println(r);
+        }
+    }
+
 }
